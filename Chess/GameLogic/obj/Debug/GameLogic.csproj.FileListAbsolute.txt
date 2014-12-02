@@ -3,3 +3,4 @@ E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\GameLogic\bin\Debug
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\GameLogic\bin\Debug\GameLogic.pdb
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\GameLogic\obj\Debug\GameLogic.exe
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\GameLogic\obj\Debug\GameLogic.pdb
+E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\GameLogic\obj\Debug\GameLogic.csprojResolveAssemblyReference.cache

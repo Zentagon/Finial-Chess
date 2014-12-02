@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameLogic
 {
-    public class TurnOrder
+    public class TurnOrder : Logics
     {
         // Ett tappert försök att använda enum på. :)
         public enum TurnInfo
@@ -18,7 +18,9 @@ namespace GameLogic
             Choose,
             Win,
         };
-        // Använder 
+    
+        // Kolla vilken enum som skickas in. Därefter skriver den olika på skärmen beroende på
+        // enumet.
         public void TurnCheck(TurnInfo turnInfo)
         {
             switch (turnInfo)
@@ -38,13 +40,15 @@ namespace GameLogic
                     break;
             }
         }
-
+    
         // Lägger till 2 nya spelare till spelet.
         public Player player1 = new Player();
         public Player player2 = new Player();
         // För att hålla koll på vems tur det är.
         private bool player1Turn = true;
-        // Använder metoden TurnCheck tillsammans med enum för att få en händelse rapport.
+        // Använder metoden TurnCheck tillsammans med enum. Genom att skicka ett enum till TurnCheck, så skriver den ut
+        // Lite text på skärmen om vad som händer. Tanken är att använda ett slumpmässigt tal för att göra så att datorn kan
+        // Flytta pjäserna... Just nu står dom i en "CW" för att vi ska kunna se att den generar ett "Random" tal.
         public void NewTurn()
         {
             if (player1Turn == true)
@@ -52,28 +56,28 @@ namespace GameLogic
                 TurnCheck(TurnInfo.New);
                 Thread.Sleep(2000);
                 TurnCheck(TurnInfo.Thinking);
-                Console.WriteLine(player1.RandomNumber());
+                UnitSelect(player1.RandomNumber()); // Viktig!
                 Console.WriteLine();
                 Thread.Sleep(2500);
                 TurnCheck(TurnInfo.Choose);
                 Thread.Sleep(2000);
                 TurnCheck(TurnInfo.End);
+                Thread.Sleep(1500);
                 player1Turn = false;
-                Console.Clear();
             }
             else
             {
                 TurnCheck(TurnInfo.New);
                 Thread.Sleep(2000);
                 TurnCheck(TurnInfo.Thinking);
-                Console.WriteLine(player2.RandomNumber());
+                UnitSelect(player2.RandomNumber()); // Viktig!
                 Console.WriteLine();
                 Thread.Sleep(2500);
                 TurnCheck(TurnInfo.Choose);
                 Thread.Sleep(2000);
                 TurnCheck(TurnInfo.End);
+                Thread.Sleep(1500);
                 player1Turn = true;
-                Console.Clear();
             }
         }
     }

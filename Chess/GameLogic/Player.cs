@@ -14,5 +14,6 @@ namespace GameLogic
             int number = random.Next(1, 16);
             return number;
         }
+
     }
 }
