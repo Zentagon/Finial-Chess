@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace GameLogic
 {
-    class Program
+    public class Player
     {
-        static void Main()
+        public int RandomNumber()
         {
-            
+            Random random = new Random();
+            int number = random.Next(1, 16);
+            return number;
         }
     }
 }
