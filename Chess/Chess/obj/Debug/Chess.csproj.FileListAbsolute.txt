@@ -2,6 +2,5 @@ E:\Visual Studie Project\ChessGameProject\Chess\Chess\bin\Debug\Chess.exe.config
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\Chess\bin\Debug\Chess.exe.config
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\Chess\bin\Debug\Chess.exe
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\Chess\bin\Debug\Chess.pdb
-E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\Chess\obj\Debug\Chess.csprojResolveAssemblyReference.cache
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\Chess\obj\Debug\Chess.exe
 E:\Visual Studie Project\ChessGameProject\Finial-Chess\Chess\Chess\obj\Debug\Chess.pdb
