@@ -16,29 +16,19 @@ namespace Chess
     {
         static void Main(string[] args)
         {
-            //Menu menu = new Menu();
-            //while (menu.Active == true)
-            //{
-            //    menu.Start();
-            //    while (menu.Game == true)
-            //    {
-            //        menu.PrintBoard();
-            //        Thread.Sleep(2000);
-            //        Console.Clear();
-            //    }
-            //}
-            Player player1 = new Player();
-            Console.WriteLine(player1.RandomNumber());
-            Thread.Sleep(1000);
-            Console.WriteLine(player1.RandomNumber());
-            Thread.Sleep(1000);
-            Console.WriteLine(player1.RandomNumber());
-            Thread.Sleep(1000);
-            Console.WriteLine(player1.RandomNumber());
-            Thread.Sleep(1000);
-            Console.WriteLine(player1.RandomNumber());
-            Thread.Sleep(1000);
-
+            Menu menu = new Menu();
+            TurnOrder turn = new TurnOrder();
+            while (menu.Active == true)
+            {
+                menu.Start();
+                while (menu.Game == true)
+                {
+                    menu.PrintBoard();
+                    turn.NewTurn();
+                    Console.Clear();
+                }
+            }
+            Thread.Sleep(2000);
         }
     }
 }
